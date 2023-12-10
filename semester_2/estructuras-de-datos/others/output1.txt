@@ -1,0 +1,7 @@
+Suma 65
+Suma 34
+Suma 19
+Suma 12
+Suma 9
+Suma 8
+Suma 8

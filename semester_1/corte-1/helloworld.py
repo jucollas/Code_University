@@ -1,0 +1,7 @@
+print("soy una calculadora para sumas, de la forma A+B, por favor digite el valor de A")
+A=int(input())
+print("por favor digite el valor de B")
+B=int(input())
+C=int(A+B)
+print("El resultado de la suma es %a" %C)
+print("el valor ingresado no es numero")

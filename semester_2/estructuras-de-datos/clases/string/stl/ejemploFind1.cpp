@@ -1,0 +1,30 @@
+#include <iostream>
+#include <algorithm>
+ 
+using namespace std;
+ 
+int main(){
+    int arreglo[]= {1, 5, 8, 9, 6, 7, 3, 4, 2, 0};
+    int n = sizeof(arreglo) / sizeof(int);
+
+    cout << "Arreglo:" << endl;
+    for(int i = 0; i < n; i++)
+        cout << arreglo[i] << " ";
+    cout << endl;
+
+    int* pos = find(arreglo, arreglo + n, 2); 
+
+    if (pos != arreglo + n) 
+       cout << "El numero 2 se encuentra en el arreglo en la posicion " << pos - arreglo << "." << endl;
+    else
+       cout << "El numero 2 no se encuentra en el arreglo." << endl;
+
+    pos = find(arreglo, arreglo + n, 11);
+
+    if (pos != arreglo + n)
+       cout << "El numero 11 se encuentra en el arreglo en la posicion " << pos - arreglo << "." << endl;
+    else
+       cout << "El numero 11 no se encuentra en el arreglo." << endl;
+ 
+    return 0;
+}
